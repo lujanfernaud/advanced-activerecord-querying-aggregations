@@ -2,4 +2,4 @@
 
 ## Aggregations
 
-Upcase exercise on [aggregations](https://thoughtbot.com/upcase/videos/advanced-querying-aggregations).
+Upcase exercise on [Advanced ActiveRecord Querying](https://thoughtbot.com/upcase/advanced-activerecord-querying).
