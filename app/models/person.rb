@@ -5,10 +5,11 @@ class Person < ActiveRecord::Base
   has_many :employees, class_name: "Person", foreign_key: :manager_id
 
   def self.maximum_salary_by_location
-    {}
+    joins(:location).group("locations.id").maximum(:salary)
   end
 
   def self.managers_by_average_salary_difference
-    all
+    # Haven't been able to make this one work as expected.
+    joins(:manager).group("managers_people.name").average(:salary)
   end
 end
